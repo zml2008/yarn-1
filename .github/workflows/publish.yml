@@ -28,6 +28,9 @@ jobs:
           token: ${{ secrets.github_token }}
           prefix: ${{ github.ref }}
 
+      - run: |
+              ls -lha .
+
       - run: ./gradlew help
         env:
           MAVEN_URL: ${{ secrets.MAVEN_URL }}
