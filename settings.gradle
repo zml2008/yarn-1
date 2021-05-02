@@ -4,6 +4,11 @@ pluginManagement {
 			name = 'Fabric'
 			url = 'https://maven.fabricmc.net/'
 		}
+		maven {
+		        name = 'stellardriftSnapshots'
+			url = 'https://repo.stellardrift.ca/repository/snapshots/'
+			mavenContent { snapshotsOnly() }
+		}
 		gradlePluginPortal()
 		mavenLocal()
 	}
